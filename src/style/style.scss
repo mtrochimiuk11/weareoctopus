@@ -1,0 +1,32 @@
+@import "variables";
+@import "partials/header";
+@import "partials/hero";
+@import 'partials/clients';
+@import "partials/offer";
+@import "partials/tech";
+@import "partials/projects";
+@import "partials/contact";
+@import "partials/footer";
+@import "partials/subpages";
+@import "partials/projects-subpage";
+@import "partials/subpages2";
+@import "partials/contact-form";
+@import "partials/development";
+@import "partials/cooperation";
+@import "partials/performance";
+
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
+body {
+  margin: 0;
+}
+
+.wrapper {
+  overflow: hidden;
+
+}
+

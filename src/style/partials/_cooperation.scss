@@ -1,0 +1,39 @@
+.cooperation {
+  margin: 0 16px 42px;
+  max-width: 650px;
+  &__title {
+    font-family: 'Prompt', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #333333;
+    margin-bottom: 19px;
+  }
+  &__paragraph {
+    font-family: 'Noto Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #333333;
+  }
+}
+
+@media all and (min-width: 800px){
+  .cooperation {
+    margin: 0 auto 42px;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .cooperation {
+    max-width: 1040px;
+    margin-bottom: 150px;
+    &__title {
+      margin-top: 170px;
+      font-size: 32px;
+      line-height: 48px;
+    }
+  }
+}

@@ -1,0 +1,165 @@
+.footer {
+  background-color: $lightGray;
+  padding: 0 16px;
+  border-top: 2px solid #EEEEEE;
+
+  &__hello {
+    padding-top: 48px;
+
+    &__title {
+      margin: 0 0 24px;
+      color: $textGray;
+      font: 700 14px/20px "Prompt";
+    }
+
+    &__link {
+      text-decoration: none;
+    }
+
+    &__email,
+    &__address {
+      color: $gray;
+      font: 400 16px/24px "Noto Sans";
+    }
+  }
+
+  &__menu {
+    &__title {
+      margin: 24px 0;
+      color: $textGray;
+      font: 700 14px/20px "Prompt";
+    }
+
+    &__list {
+      list-style: none;
+      padding: 0 0 12px;
+      font: 400 16px/24px "Noto Sans";
+
+      &__item {
+        margin-bottom: 12px;
+        & a{
+          color: $gray;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  &__contact {
+    color: $gray;
+    cursor: pointer;
+  }
+
+  &__social {
+    &__title {
+      color: $textGray;
+      font: 700 14px/20px "Prompt";
+      margin: 0 0 24px;
+    }
+
+    &__box {
+      display: flex;
+      align-content: center;
+      margin-bottom: 48px;
+    }
+
+    &__link {
+      display: flex;
+      align-items: center;
+      width: 32px;
+      height: 32px;
+      margin-right: 16px;
+      &::after {
+        content: ' ';
+        display: block;
+        width: 32px;
+        height: 32px;
+        border-radius: 100%;
+        background: $gray;
+        opacity: 0.1;
+        margin-right: 16px;
+        position: absolute;
+      }
+    }
+
+    &__icon {
+      padding-left: 8px;
+
+      &:first-of-type {
+        width: 17px;
+        height: 17px;
+      }
+
+      &:nth-of-type(2) {
+        width: 9px;
+        height: 17px;
+      }
+
+      &:nth-of-type(3) {
+        width: 17px;
+        height: 12px;
+      }
+    }
+  }
+
+  &__octopus {
+    padding-bottom: 84px;
+  }
+
+  &__logo {
+    opacity: 0.3;
+  }
+
+  &__slogan {
+    color: $gray;
+    font: 400 16px/24px "Noto Sans";
+    margin: 16px 0 67px;
+  }
+
+  &__copyrights {
+    color: $gray;
+    font: 400 12px/16px "Prompt";
+    margin: 0;
+    display: flex;
+    & > * {
+      color: $gray;
+      text-decoration: none;
+      margin: 0 6px;
+    }
+    &__border {
+      width: 2px;
+      height: 16px;
+      background-color: $gray;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    display: flex;
+    justify-content: center;
+
+    &__octopus {
+      order: 1;
+      margin-right: 205px;
+      margin-top: 49px;
+    }
+    &__hello {
+      order: 2;
+      margin-right: 88px;
+    }
+    &__menu {
+      order: 3;
+      margin-right: 148px;
+      &__title {
+        margin-top: 49px;
+      }
+    }
+    &__social {
+      order: 4;
+      &__title {
+        margin-top: 49px;
+      }
+    }
+  }
+}

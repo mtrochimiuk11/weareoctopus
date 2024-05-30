@@ -1,0 +1,260 @@
+.offer {
+  margin-left: 16px;
+
+  &__left {
+    margin-right: 16px;
+  }
+
+  &__subtitle {
+    color: $gray;
+    font: 400 16px/12px "Prompt";
+    margin: 64px 0 10px;
+  }
+
+  &__title {
+    font: 700 24px/32px "Prompt";
+    margin: 0 0 16px;
+    color: $textGray;
+  }
+
+  &__text {
+    color: $textGray;
+    font: 700 16px/24px "Noto Sans";
+    margin-bottom: 44px;
+  }
+
+  &__list__item {
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+    margin-bottom: 4px;
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  &__icon {
+    margin-right: 24px;
+    &-one {
+      width: 23.46px;
+    }
+    &-two {
+      width: 23.8px;
+    }
+    &-three {
+      width: 25.66px;
+    }
+    &-four {
+      width: 25.07px;
+    }
+    &-five {
+      width: 27.24px;
+    }
+  }
+
+  &__service {
+    color: $gray;
+    font: 700 16px/24px "Noto Sans";
+  }
+
+  &__description {
+    padding-bottom: 22px;
+    margin-right: 26px;
+    opacity: 0;
+
+    &__title {
+      width: fit-content;
+      padding-top: 36px;
+      color: $textGray;
+      font: 700 18px/24px "Prompt";
+      padding-bottom: 4px;
+      border-bottom: 1px solid $textGray;
+      margin-top: 0;
+    }
+
+    &__text {
+      color: $textGray;
+      font: 400 14px/20px "Noto Sans";
+    }
+
+    &__arrows {
+      float: right;
+      margin-right: 11px;
+    }
+
+    &__arrow-left {
+      margin-right: 32px;
+      &[fill="#8008FE"] {
+        cursor: pointer;
+
+      }
+    }
+    &__arrow-right[fill="#8008FE"] {
+      cursor: pointer;
+
+    }
+
+
+  }
+}
+
+.slider {
+  width: 343px;
+  &__slides {
+    display: flex;
+    overflow: hidden;
+    flex-wrap: nowrap;
+    width: max-content;
+  }
+  &__slide {
+    width: 343px;
+    padding-right: 25px;
+    opacity: 0;
+    transition: all 0.5s ease-in;
+    display: flex;
+    flex-direction: column;
+
+    &:nth-of-type(2){
+      transform: translateX(-368px);
+    }
+    &:nth-of-type(3){
+      transform: translateX(calc(-368px * 2));
+    }
+    &:nth-of-type(4){
+      transform: translateX(calc(-368px * 3));
+    }
+    &:nth-of-type(5){
+      transform: translateX(calc(-368px * 4));
+    }
+    &.active {
+      opacity: 1;
+      transition: all 0.5s 0.6s ease-out;
+
+    }
+
+  }
+}
+
+@media all and (min-width: 550px) and (max-width: 768px){
+  .offer__description {
+    margin-left: 20vw;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .offer {
+    display: flex;
+    justify-content: center;
+
+    &__icon {
+      &-one {
+        width: 30px;
+      }
+      &-two {
+        width: 28px;
+      }
+      &-three {
+        width: 31px;
+      }
+      &-four {
+        width: 30px;
+      }
+      &-five {
+        width: 32px;
+      }
+    }
+    &__text {
+      width: 350px;
+    }
+
+    &__description {
+      margin-right: 0;
+      &__title {
+        margin-top: 241px
+
+      }
+    }
+  }
+}
+
+  @media all and (min-width: 1200px) {
+    .offer {
+      display: flex;
+      justify-content: center;
+      max-width: 1720px;
+      margin: auto;
+      padding: 0;
+
+
+      &__left {
+        margin-left: 100px;
+      }
+
+      &__subtitle {
+        margin-bottom: 4px;
+      }
+
+      &__title {
+        font-size: 32px;
+        line-height: 48px;
+      }
+
+      &__text {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 40px;
+        width: 508px;
+      }
+
+      &__list__item {
+        opacity: 0;
+        transform: translateX(-100px);
+        cursor: pointer;
+      }
+
+      &__icon {
+        width: 32px;
+        height: 32px;
+        margin-right: 32px;
+      }
+
+      &__service {
+        font-size: 18px;
+      }
+
+      &__description {
+        width: 425px;
+        margin-left: 24px;
+        opacity: 0;
+        &__title {
+          margin-top: 241px
+        }
+        &__text {
+          font-size: 15px;
+          line-height: 24px;
+        }
+        &__arrows {
+          margin-right: 16px;
+        }
+      }
+    }
+
+    .slider {
+      &__slides {
+        overflow: hidden;
+      }
+      &__slide {
+        width: 423px;
+        &:nth-of-type(2){
+          transform: translateX(-448px);
+        }
+        &:nth-of-type(3){
+          transform: translateX(calc(-448px * 2));
+        }
+        &:nth-of-type(4){
+          transform: translateX(calc(-448px * 3));
+        }
+        &:nth-of-type(5){
+          transform: translateX(calc(-448px * 4));
+        }
+      }
+    }
+  }

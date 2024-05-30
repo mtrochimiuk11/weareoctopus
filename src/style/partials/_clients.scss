@@ -1,0 +1,137 @@
+.clients {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  background-color: $violet;
+  position: relative;
+
+  &__subtitle {
+    font: 400 12px/16px "Prompt";
+    padding: 40px 0 4px;
+    margin: 0;
+    color: $lightGray;
+  }
+
+  &__title {
+    font: 700 32px/48px "Prompt";
+    margin: 0 0 16px;
+  }
+
+  &__text {
+    text-align: center;
+    margin: 0;
+    padding: 16px;
+    font: 400 14px/20px "Noto Sans";
+  }
+
+  &__logo {
+    padding: 0 0 40px 0;
+
+    &__wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      width: 80vw;
+      margin: 32px 17px 24px 40px;
+      justify-content: space-between;
+      max-width: 350px;
+    }
+    &:nth-of-type(1){
+      width: 105px;
+      height: 12px;
+      padding-top: 6px
+    }
+    &:nth-of-type(2){
+      width: 164px;
+    }
+    &:nth-of-type(3){
+      width: 117px;
+    }
+    &:nth-of-type(4){
+      width: 120px;
+      padding-right: 21px;
+    }
+    &:nth-of-type(5){
+      padding-left: 20px;
+    }
+    &:nth-of-type(6){
+      width: 47px;
+      padding-right: 50px;
+
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .clients__logo{
+    &__wrapper {
+      max-width: 880px;
+    }
+    &:nth-of-type(5){
+      padding-left: min(275px, 25vw);
+    }
+    &:nth-of-type(6){
+      padding-right: min(300px, 27vw);
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients {
+    &__title {
+      font-size: 48px;
+      line-height: 60px;
+      margin-bottom: 28px;
+    }
+
+    &__text {
+      font-size: 15px;
+      line-height: 24px;
+      width: 380px;
+      padding: 0;
+    }
+
+    &__logo {
+      max-width: unset;
+      box-sizing: content-box;
+
+      &__wrapper {
+        margin-top: 45px;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        width: unset;
+        max-width: 1200px;
+      }
+      &:nth-of-type(1){
+        width: 153px;
+        height: 17px;
+        padding-right: 68px;
+        padding-top: 6px
+      }
+      &:nth-of-type(2){
+        width: 242px;
+        height: 29px;
+        padding-right: 65px;
+      }
+      &:nth-of-type(3){
+        width: 161px;
+        height: 30px;
+        padding-right: 93px;
+      }
+      &:nth-of-type(4){
+        width: 185px;
+        height: 32px;
+        margin-top: -2px;
+        padding-right: 0;
+      }
+      &:nth-of-type(5){
+        width: 95px;
+        padding-left: 380px;
+      }
+      &:nth-of-type(6){
+        width: 58px;
+        padding-right: 410px;
+      }
+    }
+  }
+}

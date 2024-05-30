@@ -1,0 +1,158 @@
+.subpage {
+  &__titles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  &__subtitle {
+    color: $gray;
+    font: 400 12px/16px "Prompt";
+    margin: 0;
+  }
+
+  &__title {
+    color: $textGray;
+    font: 700 24px/32px "Prompt";
+    margin: 4px 0 45px;
+  }
+
+  &__project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 16px;
+
+    &__wrapper {
+      overflow: hidden;
+    }
+
+    &__link {
+      text-decoration: none;
+      margin-bottom: 49px;
+    }
+
+    &__title {
+      color: $textGray;
+      font: 700 18px/24px "Prompt";
+      margin: 21px 0 4px;
+    }
+
+    &__subtitle {
+      color: $gray;
+      font: 400 12px/16px "Prompt";
+      margin: 0 0 16px;
+    }
+
+    &__text {
+      color: $textGray;
+      font: 400 14px/20px "Noto Sans";
+      margin: 0;
+      max-width: 375px;
+    }
+  }
+
+  &__back {
+    color: $violet;
+    font: 700 18px/24px "Montserrat";
+    margin: 31px 0 128px;
+    &__wrapper {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .subpage__project {
+    flex-direction: row;
+    align-items: unset;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+ .subpage {
+   &__titles {
+     margin-top: 28px;
+   }
+
+   &__title {
+     font-size: 32px;
+     line-height: 48px;
+     margin-bottom: 48px;
+   }
+
+   &__project {
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: flex-start;
+     width: 1040px;
+     margin: 0 auto;
+
+     &__link {
+       margin-bottom: 64px;
+     }
+
+     &__titles {
+       display: flex;
+       justify-content: space-between;
+       align-items: baseline;
+     }
+
+     &__title {
+       font-size: 24px;
+       line-height: 32px;
+     }
+
+     &__text {
+       font-size: 15px;
+       line-height: 24px;
+       width: 508px;
+       max-width: unset;
+     }
+
+     &__right-top {
+       margin-top: 48px;
+     }
+
+     &__rught-bottom {
+       margin-bottom: 0;
+     }
+
+     &--bottom {
+       position: relative;
+       margin-bottom: -186px;
+      z-index: 2;
+     }
+
+     &__left-bottom {
+       position: relative;
+       top: -231px;
+     }
+   }
+
+   &__back {
+     text-decoration: none;
+     display: flex;
+     flex-direction: column;
+     margin: 0 0 112px;
+     position: relative;
+     z-index: 2;
+     &::after {
+       content: '';
+       display: block;
+       width: 226px;
+       height: 2px;
+       border-radius: 99px;
+       background-color: $violet;
+       opacity: 0;
+       transition: all 0.3s ease-out;
+     }
+     &:hover::after {
+       opacity: 1;
+       transition: all 0.3s ease-in;
+     }
+   }
+ }
+}

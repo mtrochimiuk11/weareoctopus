@@ -1,0 +1,227 @@
+.subhero-hf {
+  padding: 0 16px;
+  max-width: 400px;
+  margin: 0 auto;
+  &__title {
+    font: 700 24px/32px "Prompt";
+    color: $textGray;
+    margin: 44px 0 0;
+  }
+
+  &__subtitle {
+    font: 400 12px/16px "Prompt";
+    color: $gray;
+    margin: 4px 0 16px;
+  }
+
+  &__text {
+    font: 400 14px/20px "Noto Sans";
+    color: $textGray;
+    margin: 0;
+  }
+
+  &__img {
+    margin: 48px 0;
+    width: 100%;
+  }
+}
+
+.quote {
+  padding: 0 16px;
+  max-width: 400px;
+  margin: 0 auto;
+  &__text {
+    margin: 0;
+    font: 700 18px/24px "Prompt";
+    color: $violet;
+  }
+}
+
+.concept-hf {
+  padding: 0 16px;
+  max-width: 400px;
+  margin: 0 auto;
+  &__title {
+    margin: 48px 0 16px;
+    color: $textGray;
+    font: 700 24px/32px "Prompt";
+  }
+
+  &__text {
+    font: 400 14px/20px "Noto Sans";
+    color: $textGray;
+    &__paragraph {
+      margin: 0 0 24px;
+    }
+  }
+
+  &__photo {
+    margin: 48px 0 0;
+  }
+
+  &__img {
+    &-one,
+    &-two {
+      width: 100%;
+      margin-bottom: 24px;
+    }
+
+  }
+}
+
+.marketing-hf {
+  padding: 0 16px;
+  max-width: 400px;
+  margin: 0 auto;
+  &__title {
+    margin: 56px 0 48px;
+    color: $textGray;
+    font: 700 24px/32px "Prompt";
+  }
+
+  &__paragraph {
+    font: 400 14px/20px "Noto Sans";
+    color: $textGray;
+    margin: 0 0 24px;
+  }
+
+  &__photo {
+    margin: 48px 0 76px;
+    &__img-sm {
+      width: 100%;
+      &-one {
+        margin-bottom: 48px;
+      }
+      &-two {
+        margin-bottom: 24px;
+      }
+    }
+
+    &__img-bg {
+      width: 100%;
+    }
+  }
+}
+
+@media all and (min-width: 1100px){
+ .subhero-hf {
+   padding: 0;
+   max-width: unset;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin: 0;
+   &__text {
+     width: 508px;
+     margin: 48px 0 0;
+     font-size: 15px;
+     line-height: 24px;
+     &__wrapper {
+       display: flex;
+       justify-content: space-between;
+       width: 100%;
+     }
+   }
+
+   &__title {
+     margin: 28px 0 0;
+     font-size: 32px;
+     line-height: 48px;
+   }
+
+   &__img {
+     margin-top: 48px;
+     width: 1040px;
+     height: 585px;
+   }
+ }
+
+  .quote {
+    padding: 0;
+    max-width: unset;
+    width: 860px;
+    margin: 0;
+    &__text {
+      font-size: 24px;
+      line-height: 32px;
+    }
+  }
+
+  .concept-hf {
+    padding: 0;
+    max-width: unset;
+    margin: 0;
+    &__title {
+      font-size: 32px;
+      line-height: 48px;
+    }
+
+    &__text {
+      font-size: 15px;
+      line-height: 24px;
+    }
+
+    &__photo {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__img-one,
+    &__img-two {
+      width: 508px;
+      height: 610px;
+    }
+  }
+
+  .marketing-hf {
+    padding: 0;
+    max-width: unset;
+    margin: 56px 0 0;
+
+    &__text {
+      display: flex;
+      justify-content: space-between;
+
+      &-one {
+        width: 508px;
+      }
+
+      &-two {
+        margin-top: 12px;
+        width: 508px;
+      }
+    }
+
+    &__title {
+      margin: 0 0 48px;
+      font-size: 32px;
+      line-height: 48px;
+    }
+
+    &__paragraph {
+      font-size: 15px;
+      line-height: 24px;
+    }
+
+    &__photo {
+      display: flex;
+      justify-content: space-between;
+
+      &__wrapper {
+        display: flex;
+        flex-direction: column;
+      }
+
+      &__img-sm {
+        width: 508px;
+        height: 322px;
+      }
+
+      &__img-bg {
+        width: 508px;
+        height: 610px;
+        margin-top: 41px;
+      }
+    }
+  }
+}
